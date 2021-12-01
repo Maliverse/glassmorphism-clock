@@ -1,27 +1,27 @@
-body{
+*,
+*:before,
+*:after{
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh ;
     background-image: url(img/backgroundshapes.png);
     background-repeat:inherit;
     background-size: contain;
     background-color:rgb(0, 0, 53); 
-   
-}
-
-
-
-
-.clockposition{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50em;
+ 
    
 }
 
 .clock{
-    height: 1300px;
-    width: 1300px;
+    min-width: 200px;
+    max-width: 350px;
+    height: 300px;
+    width: 300px;
     background-color: rgba(220, 29, 140, 0.571);
     position: fixed;
     margin: auto;
@@ -31,12 +31,13 @@ body{
     left: 0;
     backdrop-filter: blur(20px) ;
     border-radius: 50%;
-    border: 10px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
     
 }
 .clockvector{
     opacity: 0.6;
+    position: relative;
 }
 
 .hand{
@@ -51,17 +52,17 @@ body{
     transform-origin: bottom;
 }
 .hour{
-    height: 300px;
-    width: 20px;
-    top: 365px;
+    height: 70px;
+    width: 3px;
+    top: 78px;
 }
 .minute{
-    height: 400px;
-    width: 15px;
-    top: 265px;
+    height: 100px;
+    width: 3px;
+    top: 48px;
 }
 .seconds{
-    height: 500px;
-    width: 5px;
-    top: 165px;
+    height: 130px;
+    width: 2px;
+    top: 18px;
 }
